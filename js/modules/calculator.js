@@ -3,13 +3,13 @@
 const calculate = (x, y, operation) => {
     switch (operation) {
         case 'add':
-            return add(x, y);
+            return x + y;
         case 'subtract':
-            return subtract(x, y);
+            return x - y;
         case 'multiply':
-            return multiply(x, y);
+            return x * y;
         case 'divide':
-            return divide(x, y);
+            return x / y;
     }
 }
 
@@ -17,27 +17,19 @@ const calculate = (x, y, operation) => {
 //////////////////////////////////
 // ADD FUNCTION
 
-function add(x, y) {
-    return x + y;
-}
+const add = (x, y) => calculate(x, y, 'add');
 
 // SUBTRACT FUNCTION
 
-function subtract(x, y) {
-    return x - y;
-}
+const subtract = (x, y) => calculate(x, y, 'subtract');
 
 // MULTIPLY FUNCTION
 
-function multiply(x, y) {
-    return x * y;
-}
+const multiply = (x, y) => calculate(x, y, 'multiply');
 
 // DIVIDE FUNCTION
 
-function divide(x, y) {
-    return x / y;
-}
+const divide = (x, y) => calculate(x, y, 'divide');
 
 // EXPORT THE FOUR PUBLIC FUNCTIONS
 
